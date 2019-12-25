@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>251</width>
-    <height>458</height>
+    <width>465</width>
+    <height>658</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Client</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/img/img/icon.png</normaloff>:/img/img/icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -34,7 +38,7 @@
           <widget class="QPushButton" name="pushButton">
            <property name="maximumSize">
             <size>
-             <width>50</width>
+             <width>16777215</width>
              <height>16777215</height>
             </size>
            </property>
@@ -54,7 +58,7 @@ background-color: rgb(102, 102, 102);</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>150</height>
+           <height>500</height>
           </size>
          </property>
          <property name="font">
@@ -82,7 +86,7 @@ background-color: rgb(102, 102, 102);</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>150</height>
+           <height>500</height>
           </size>
          </property>
          <property name="font">
@@ -99,25 +103,27 @@ background-color: rgb(102, 102, 102);</string>
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QLabel" name="status">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
       </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="status">
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>20</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

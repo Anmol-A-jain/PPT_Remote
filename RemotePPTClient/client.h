@@ -25,6 +25,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_ip_returnPressed();
+
 private:
     Ui::Client *ui;
     QTcpSocket* serverClient;

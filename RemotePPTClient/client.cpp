@@ -55,3 +55,8 @@ void Client::on_pushButton_clicked()
     connect(serverClient,&QTcpSocket::disconnected,this,&Client::disconneced);
     serverClient->connectToHost(ui->ip->text(),4444);
 }
+
+void Client::on_ip_returnPressed()
+{
+    emit on_pushButton_clicked();
+}
